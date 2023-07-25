@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'de.dmitry.kubakhov.ui.elements.demo'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: project['spring.boot.version']
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: project['spring.boot.version']
+
+    testImplementation group: 'io.cucumber', name: 'cucumber-java', version: project['cucumber.version']
+    testImplementation group: 'io.cucumber', name: 'cucumber-spring', version: project['cucumber.version']
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit-platform-engine', version: project['cucumber.version']
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: project['junit.jupiter.version']
+    testImplementation group: 'org.junit.platform', name: 'junit-platform-suite', version: project['junit.platform.version']
+
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: project['selenium.version']
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-remote-driver', version: project['selenium.version']
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-support', version: project['selenium.version']
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-api', version: project['selenium.version']
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'file.encoding', 'utf-8'
+}
+
