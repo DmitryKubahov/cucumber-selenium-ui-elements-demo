@@ -42,5 +42,5 @@ The Benefits section highlights the advantages of adopting UI Elements for UI te
 To get started with this demo project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/DmitryKubahov/cucumber-selenium-ui-elements-demo.git`
-2. Navigate to the project directory: `cd your-demo-project`
+2. Navigate to the project directory: `cd cucumber-selenium-ui-elements-demo`
 3. Build project and run tests: `./gradlew clean build`
